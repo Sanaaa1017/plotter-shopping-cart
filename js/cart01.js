@@ -13,9 +13,6 @@
 // 下方顯示商品總計
 // 更新暫存數量
 
-// price_show.dataset.price?
-// 多個 let quantity = every_quantity[index];找裡面的索引值?
-// 單個 let quantity = document.querySelector('.quantity');
 let item_list = [
     {
         id: '1',
