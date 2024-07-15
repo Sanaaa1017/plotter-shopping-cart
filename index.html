@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PLOTTER Online Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    body {
+      background-image: url(./image/bg1.png);
+    }
+  </style>
+</head>
+
+<body>
+  <header class="navbar navbar-expand-lg p-3 sticky-top" style="background-color: rgb(51, 51, 51);">
+    <div class="container-lg">
+      <a class="navbar-brand" aria-current="page" href="https://www.plotter-japan.net/">
+        <img src="./image/title_logo.png" alt="">
+      </a>
+
+      <button class="navbar-toggler" data-bs-theme="dark" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-white" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item me-3">
+            <a class="nav-link text-white" href="#">ご利用案内</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link text-white" href="./pages/cart01.html">
+              <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+              カートを見る
+            </a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link text-white" href="./pages/login.html">
+              <i class="fa-solid fa-arrow-right-to-bracket" style="color: #ffffff;"></i>
+              ログイン
+            </a>
+          </li>
+          <li class="nav-item me-3 mb-3">
+            <div class="dropdown-hide">
+              <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                アイテムで探す
+              </div>
+              <ul class="dropdown-menu list-unstyled p-3">
+                <div data-bs-spy="scroll" data-bs-target="side-bar-group" data-bs-offset="0"
+                  data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                  <li class="side-bar-group">
+                    <strong class="side-bar-heading">レザーバインダー</strong>
+                    <ul class="list-unstyled small mb-3">
+                      <a href="">
+                        <li class="my-3">0512 リスシオ</li>
+                      </a>
+                      <a href="">
+                        <li class="my-3">5001 プエブロ</li>
+                      </a>
+                      <a href="">
+                        <li class="my-3">5016 ホースヘアーⅡ</li>
+                      </a>
+                      <a href="">
+                        <li class="my-3">5003 シュリンク</li>
+                      </a>
+                      <a href="">
+                        <li class="my-3">5015 ブライドル</li>
+                      </a>
+                    </ul>
+                    <hr>
+                    <strong class="side-bar-heading">オンラインショップ限定商品</strong>
+                    <ul class="list-unstyled small mb-3">
+                      <a href="">
+                        <li class="my-3">レーザー名入れ</li>
+                      </a>
+                      <a href="">
+                        <li class="my-3">レザーバインダー</li>
+                      </a>
+                      <a href="">
+                        <li class="my-3">リフィル/ノート</li>
+                      </a>
+                      <a href="">
+                        <li class="my-3">アクセサリーツール</li>
+                      </a>
+                    </ul>
+                    <hr>
+                    <strong class="side-bar-heading">リフィル/ノート</strong>
+                    <ul class="list-unstyled small mb-3">
+                      <a href="">
+                        <li class="my-3">003 無地</li>
+                      </a>
+                      <a href="">
+                        <li class="my-3">004 2mm方眼</li>
+                      </a>
+                      <a href="">
+                        <li class="my-3">005 6mm罫線</li>
+                      </a>
+                      <a href="">
+                        <li class="my-3">006 To Do リスト</li>
+                      </a>
+                      <a href="">
+                        <li class="my-3">007 ドローイングペーパー</li>
+                      </a>
+                      <a href="">
+                        <li class="my-3">014 4㎜ドット方眼</li>
+                      </a>
+                      <a href="">
+                        <li class="my-3">015 アイソメトリック</li>
+                      </a>
+                      <a href="">
+                        <li class="my-3">021 クロッキー</li>
+                      </a>
+                    </ul>
+                    <hr>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </li>
+
+          <form class="d-flex" role="search">
+            <input class="form-control bg-light rounded-0" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn rounded-0" type="submit"><i class="fa-solid fa-magnifying-glass"
+                style="color: #e6e6e6;"></i></button>
+          </form>
+      </div>
+    </div>
+  </header>
+
+  <main class="container-lg mt-5">
+    <div class="row">
+      <div class="sub-column col-12 col-lg">
+        <hr>
+        <h5 class="fw-bold">アイテムで探す</h5>
+        <hr>
+        <div class="sidebar">
+          <ul class="side-bar-nav list-unstyled">
+            <li class="side-bar-group">
+              <strong class="side-bar-heading">レザーバインダー</strong>
+              <ul class="list-unstyled small mb-5">
+                <a href="">
+                  <li class="my-3">0512 リスシオ</li>
+                </a>
+                <a href="">
+                  <li class="my-3">5001 プエブロ</li>
+                </a>
+                <a href="">
+                  <li class="my-3">5016 ホースヘアーⅡ</li>
+                </a>
+                <a href="">
+                  <li class="my-3">5003 シュリンク</li>
+                </a>
+                <a href="">
+                  <li class="my-3">5015 ブライドル</li>
+                </a>
+              </ul>
+
+              <strong class="side-bar-heading">オンラインショップ限定商品</strong>
+              <ul class="list-unstyled small mb-5">
+                <a href="">
+                  <li class="my-3">レーザー名入れ</li>
+                </a>
+                <a href="">
+                  <li class="my-3">レザーバインダー</li>
+                </a>
+                <a href="">
+                  <li class="my-3">リフィル/ノート</li>
+                </a>
+                <a href="">
+                  <li class="my-3">アクセサリーツール</li>
+                </a>
+              </ul>
+
+              <strong class="side-bar-heading">リフィル/ノート</strong>
+              <ul class="list-unstyled small mb-5">
+                <a href="">
+                  <li class="my-3">003 無地</li>
+                </a>
+                <a href="">
+                  <li class="my-3">004 2mm方眼</li>
+                </a>
+                <a href="">
+                  <li class="my-3">005 6mm罫線</li>
+                </a>
+                <a href="">
+                  <li class="my-3">006 To Do リスト</li>
+                </a>
+                <a href="">
+                  <li class="my-3">007 ドローイングペーパー</li>
+                </a>
+                <a href="">
+                  <li class="my-3">014 4㎜ドット方眼</li>
+                </a>
+                <a href="">
+                  <li class="my-3">015 アイソメトリック</li>
+                </a>
+                <a href="">
+                  <li class="my-3">021 クロッキー</li>
+                </a>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main-column col-12 col-lg-9">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="./image/banner01.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="/image/banner02.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./image/banner03.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="news-contents mt-5 fs-5">
+          <dl class="news-box m-3">
+            <dd>レザーバインダー仕様変更のお知らせ <i class="fa-solid fa-chevron-right" style="color: #313131;"></i><br>
+            </dd>
+          </dl>
+          <dl class="news-box m-3">
+            <dd>【期間限定】よりどり3点送料無料キャンペーン実施中! <i class="fa-solid fa-chevron-right" style="color: #313131;"></i><br>
+            </dd>
+          </dl>
+          <dl class="news-box m-3">
+            <dd>Our delivery service is Japan only. Sorry.<br>
+              誠に恐れ入りますが、海外発送は行っておりません。日本国内のみの発送です。</dd>
+          </dl>
+        </div>
+        <div class="product-Introduce mt-5 ">
+          <h2 class="fw-bold text-center">Products Introduce</h2>
+          <h4 class="fw-bold text-center">| アイテムで探す |</h4>
+          <div class="row row-cols-1 row-cols-lg-2">
+            <div class="col-lg-6 my-3">
+              <img src="./image/top_products1.jpg" width="100%" alt="...">
+              <h4 class="card-title fw-bold my-3">レザーバインダー</h4>
+              <p class="card-text small">
+                天然皮革の表情と個性を楽しむ、1枚革を用いたレザーバインダー。シワや色合いなど、それぞれの革が持つ個性としてお楽しみください。</p>
+            </div>
+
+            <div class="col-lg-6 my-3">
+              <img src="./image/top_products2.jpg" width="100%" alt="...">
+              <h4 class="card-title fw-bold my-3">リフィル/ノート</h4>
+              <p class="card-text small">
+                レザーバインダーに綴じられるので、テーマ別にまとめたり、気に入ったページだけ編集したり、好きなページを自由に切り離して使うことができます。</p>
+            </div>
+
+            <div class="col-lg-6 my-3">
+              <img src="./image/top_products3.jpg" width="100%" alt="...">
+              <h4 class="card-title fw-bold my-3">アクセサリーリフィル</h4>
+              <p class="card-text small">
+                “PLOTTER”のレザーバインダーとともに使うことで、創造力がさらに広がるシンプルで機能的なツールです。</p>
+            </div>
+
+            <div class="col-lg-6 my-3">
+              <img src="./image/top_products4.jpg" width="100%" alt="...">
+              <h4 class="card-title fw-bold my-3">Online Shop 限定商品</h4>
+              <p class="card-text small">
+                ここでしか手に入らないPLOTTER Online Shop限定商品。仕事用に、プライベート用に、ぜひご利用ください。</p>
+            </div>
+
+            <div class="col-lg-6 my-3">
+              <img src="./image/top_products5.jpg" width="100%" alt="...">
+              <h4 class="card-title fw-bold my-3">アクセサリーツール</h4>
+              <p class="card-text small">
+                シンプル＆ミニマムなアイテムは、仕事やクリエイティブワークを愉しんでいただけるように作った、便利なツールです。</p>
+            </div>
+          </div>
+        </div>
+        <div class="item_list">
+          <h2 class="fw-bold text-center my-5">New Products</h2>
+          <div class="row row-cols-md-2 row-cols-lg-3">
+            <div class="item_card my-3">
+              <img src="./image/item01.jpg" width="100%" alt="">
+              <p class="card-title fw-bold my-3 small">【送料無料】 5012 6穴リングレザーバインダー リスシオ ミニサイズ</p>
+              <p class="card-text">15,950 円(税込)</p>
+              <button class="add_to_cart btn btn-dark btn-sm">カートに入れる</button>
+            </div>
+
+            <div class="item_card my-3">
+              <img src="./image/item02.jpg" width="100%" alt="">
+              <p class="card-title fw-bold my-3 small">【送料無料】 5001 6穴リングレザーバインダー プエブロ ミニサイズ</p>
+              <p class="card-text">14,850 円(税込)</p>
+              <button class="add_to_cart btn btn-dark btn-sm">カートに入れる</button>
+            </div>
+
+            <div class="item_card my-3">
+              <img src="./image/item03.jpg" width="100%" alt="">
+              <p class="card-title fw-bold my-3 small">【送料無料】 5003 6穴リングレザーバインダー シュリンク ミニサイズ</p>
+              <p class="card-text">11,550 円(税込)</p>
+              <button class="add_to_cart btn btn-dark btn-sm">カートに入れる</button>
+            </div>
+
+            <div class="item_card my-3">
+              <img src="./image/item04.jpg" width="100%" alt="">
+              <p class="card-title fw-bold my-3">【送料無料】004 リフィルメモパッド2mm方眼80枚 ミニサイズ</p>
+              <p class="card-text"> 638 円(税込)</p>
+              <button class="add_to_cart btn btn-dark btn-sm">カートに入れる</button>
+            </div>
+
+            <div class="item_card my-3">
+              <img src="./image/item05.jpg" width="100%" alt="">
+              <p class="card-title fw-bold my-3 small">【送料無料】010 リフター2枚 ミニサイズ</p>
+              <p class="card-text"> 550 円(税込)</p>
+              <button class="add_to_cart btn btn-dark btn-sm">カートに入れる</button>
+            </div>
+
+            <div class="item_card my-3">
+              <img src="./image/item06.jpg" width="100%" alt="">
+              <p class="card-title fw-bold my-3 small">【送料無料】011 本革ペンホルダーリフター ミニサイズ</p>
+              <p class="card-text">1,320 円(税込)</p>
+              <button class="add_to_cart btn btn-dark btn-sm">カートに入れる</button>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer text-white" style="background-color: rgb(51, 51, 51);">
+    <div class="container-lg">
+      <div class="row row-cols-3 py-5 mt-5">
+        <div class="col-lg-auto">
+          <img src="./image/title_logo.png" alt="">
+        </div>
+
+        <div class="col-auto"></div>
+
+        <div class="col-9">
+          <div class="row row-cols-3">
+            <div class="col-12 col-lg-3">
+              <hr>
+              <h5 class="fw-bold mb-3">Products</h5>
+              <ul class=" nav flex-column">
+                <li class="nav-item mb-3">レザーバインダー</li>
+                <li class="nav-item mb-3">筆記具</li>
+                <li class="nav-item mb-3">ダイアリーリフィル</li>
+                <li class="nav-item mb-3">リフィル/ノート</li>
+                <li class="nav-item mb-3">アクセサリーリフィル</li>
+                <li class="nav-item mb-3">アクセサリーツール</li>
+              </ul>
+            </div>
+
+            <div class="col-12 col-lg-5">
+              <hr>
+              <h5 class="fw-bold mb-3">ご案内</h5>
+              <div class="row m-1">
+                <ul class=" nav col flex-column">
+                  <li class="nav-item mb-3">ご利用案内</li>
+                  <li class="nav-item mb-3">お支払方法</li>
+                  <li class="nav-item mb-3">配送方法．送料</li>
+                  <li class="nav-item mb-3">返品。交換</li>
+                </ul>
+                <ul class=" nav col flex-column">
+                  <li class="nav-item mb-3">長くご愛用いただくために</li>
+                  <li class="nav-item mb-3">ギフトラッピングについて</li>
+                  <li class="nav-item mb-3">よくあるご質問</li>
+                  <li class="nav-item mb-3">お問い合わせ</li>
+                  <li class="nav-item mb-3">カートを見る</li>
+                  <li class="nav-item mb-3">ログイン</li>
+                  <li class="nav-item mb-3">メルマガ登録．解除</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-4">
+              <hr>
+              <h5 class="fw-bold mb-3">PLOTTER Online Shopについて</h5>
+              <ul class=" nav flex-column">
+                <li class="nav-item mb-3">PLOTTER とは</li>
+                <li class="nav-item mb-3">PLOTTER オフィシャルサイト</li>
+                <li class="nav-item mb-3">会社概要</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 m-3">
+        <p>© Designphil Inc. 2017</p>
+        <div class="media-icon d-flex">
+          <div class="facebook ms-4"><i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i></div>
+          <div class="instagram ms-4"><i class="fa-brands fa-instagram  fa-xl" style="color: #ffffff;"></i></div>
+          <div class="youtube ms-4"><i class="fa-brands fa-youtube fa-xl" style="color: #ffffff;"></i></div>
+        </div>
+
+        </ul>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script src="./js/index.js"></script>
+
+</body>
+
+</html>

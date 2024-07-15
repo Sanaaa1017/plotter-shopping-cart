@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plotter登入</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        body {
+            background-color: rgb(42, 42, 42);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 10%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        p {
+            color: #ffffff;
+            margin: 0;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container-fluid vh-100">
+        <div class="row h-100">
+            <div class="main-right h-100 d-flex justify-content-center align-items-center">
+                <div class="row row-cols-1 text-center px-5">
+                    <div class="col-12 logo my-3">
+                        <a href="../index.html">
+                            <img src="../images/title_logo.png" width="30%" alt="">
+                        </a>
+                    </div>
+                    <div class="media col-12 my-3 d-flex justify-content-center align-items-center align-self-center">
+                        <i class="fa-brands fa-facebook fa-2xl m-3" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-instagram fa-2xl m-3" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-google fa-2xl m-3" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="col-12 input">
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col-8 m-auto text-end mt-2">
+                                <a href="" style="color: rgb(28, 0, 113);">
+                                    <p>*会員IDがわからない方はこちら</p>
+                                </a>
+                            </div>
+                            <div class="col-8 m-auto d-flex">
+                                <label for="exampleFormControlInput1" class="form-label"></label>
+                                <div class="input-group has-validation">
+                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="会員IDを入力してください" required>
+                                    <div class="invalid-feedback text-start">
+                                        会員IDを入力してください！
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-8 m-auto text-end mt-2">
+                                <a href="" style="color: rgb(28, 0, 113);">
+                                    <p>*パスワードがわからない方はこちら</p>
+                                </a>
+                            </div>
+                            <div class="col-8 m-auto d-flex">
+                                <label for="inputPassword5" class="form-label"></label>
+                                <div class="input-group has-validation">
+                                    <input type="password" id="inputPassword5" class="form-control rounded"
+                                        aria-describedby="passwordHelpBlock" placeholder="パスワードを入力してください" required>
+                                    <div id="passwordHelpBlock" class="form-text "></div>
+                                    <div class="invalid-feedback text-start">
+                                        パスワードを入力してください！
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-5">
+                                <button class="btn btn-light w-25 p-2 fw-bold text-nowrap text-center"
+                                    type="submit">ログイン</button>
+                            </div>
+                        </form>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+            <script src="../js/login.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>03購物車-PLOTTER Online Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    body {
+      background-color: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="navbar navbar-expand-lg p-3 sticky-top" style="background-color: rgb(51, 51, 51);">
+    <div class="container-lg">
+      <a class="navbar-brand" aria-current="page" href="../index.html">
+        <img src="../image/title_logo.png" alt="">
+      </a>
+    </div>
+    </div>
+  </header>
+
+  <main class="container-lg mt-5">
+    <div class="shopping-progress fs-4 fw-bold my-5">
+      <div class="row row-cols-7 justify-content-center">
+        <div class="col step-1" style="color: rgb(39, 39, 39);">1. ショッピングカート</div>
+        <div class="col-auto arrow-1"><i class="fa-solid fa-chevron-right" style="color: rgb(39, 39, 39);"></i></div>
+        <div class="col step-2 text-center" style="color: rgb(39, 39, 39);">2. ご注文情報の入力</div>
+        <div class="col-auto arrow-2"><i class="fa-solid fa-chevron-right" style="color: rgb(39, 39, 39);"></i></div>
+        <div class="col step-3 text-center" style="color: rgb(39, 39, 39);">3. ご注文内容の確認</div>
+        <div class="col-auto arrow-3"><i class="fa-solid fa-chevron-right" style="color: rgb(39, 39, 39);"></i></div>
+        <div class="col step-4 text-center" style="color: rgb(200, 200, 200);"">4. ご注文完了</div>
+      </div>
+    </div>
+
+    <h4 class=" fw-bold">ご注文内容</h4>
+          <table class="table">
+            <thead class="table-dark text-nowrap">
+              <tr>
+                <th scope="col">画像</th>
+                <th scope="col">品名</th>
+                <th scope="col ">価格</th>
+                <th scope="col">数量</th>
+              </tr>
+            </thead>
+            <tbody id="cart_list">
+              <!-- 商品清單列 -->
+              <!-- <tr>
+                <th><img src="./image/item01.jpg" alt="" width="100"></th>
+                <td>【送料無料】 5012 6穴リングレザーバインダー リスシオ ミニサイズ</td>
+                <td class="price_show" data-price="15950">15950円(税込)</td>
+                <td>
+                  <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                    <button type="button" class="minus_btn btn btn-outline-dark btn-sm">-</button>
+                    <input type="number" min="1" value="1" class="quantity text-center" style="width: 35px;">
+                    <button type="button" class="plus_btn btn btn-dark btn-sm">+</button>
+                  </div>
+                </td>
+                <td><button type="button" class="cancel_btn btn">削除></button></td>
+              </tr> -->
+            </tbody>
+          </table>
+
+          <div class="receipt p-5">
+            <div class="row row-cols-3 justify-content-between">
+              <div class="col"></div>
+              <span class="col text-end text-nowrap">数量:</span>
+              <span id="total_quantity_show" class="col-1 text-end text-nowrap"></span>
+            </div>
+            <div class="row row-cols-3 justify-content-between">
+              <div class="col"></div>
+              <span class="col text-end text-nowrap">小計:</span>
+              <span id="total_price_show" class="col-1 text-end text-nowrap"></span>
+            </div>
+          </div>
+
+          <h4 class=" fw-bold">お届け先</h4>
+          <div class="personal bg-light p-3">
+            <div class="row row-cols-2 my-3">
+              <div class="col-xl-2">お名前</div>
+              <div class="col text-start" id="name01"></div>
+            </div>
+
+            <div class="row row-cols-2 my-3">
+              <div class="col-xl-2">フリガナ</div>
+              <div class="col text-start" id="name02"></div>
+            </div>
+
+            <div class="row row-cols-2 my-3">
+              <div class="col-xl-2">電話番号</div>
+              <div class="col text-start" id="phone_number"></div>
+            </div>
+
+            <div class="row row-cols-2 my-3">
+              <div class="col-xl-2">メールアドレス</div>
+              <div class="col text-start" id="email"></div>
+            </div>
+
+            <div class="row row-cols-2 my-3">
+              <div class="col-xl-2">住所</div>
+              <div class="col">
+                <span class="text-start" id="city"></span>
+                <span class="text-start" id="postcode"></span>
+                <span class="text-start" id="address"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="buy-step my-5">
+            <div class="row row-col-2 justify-content-between">
+              <a href="./cart02.html" type="button" class="btn col-auto fw-bold">←前のページへ</a>
+              <a href="./cart04.html" type="button" class="btn btn-dark col-auto fw-bold">注文を確定する</a>
+            </div>
+          </div>
+  </main>
+
+  <footer class="footer text-white" style="background-color: rgb(51, 51, 51);">
+    <div class="container-lg">
+      <div class="row row-cols-3 py-5 mt-5">
+        <div class="col-lg-auto">
+          <img src="../image/title_logo.png" alt="">
+        </div>
+
+        <div class="col-auto"></div>
+
+        <div class="col-9">
+          <div class="row row-cols-3">
+            <div class="col-12 col-lg-3">
+              <hr>
+              <h5 class="fw-bold mb-3">Products</h5>
+              <ul class=" nav flex-column">
+                <li class="nav-item mb-3">レザーバインダー</li>
+                <li class="nav-item mb-3">筆記具</li>
+                <li class="nav-item mb-3">ダイアリーリフィル</li>
+                <li class="nav-item mb-3">リフィル/ノート</li>
+                <li class="nav-item mb-3">アクセサリーリフィル</li>
+                <li class="nav-item mb-3">アクセサリーツール</li>
+              </ul>
+            </div>
+
+            <div class="col-12 col-lg-5">
+              <hr>
+              <h5 class="fw-bold mb-3">ご案内</h5>
+              <div class="row m-1">
+                <ul class=" nav col flex-column">
+                  <li class="nav-item mb-3">ご利用案内</li>
+                  <li class="nav-item mb-3">お支払方法</li>
+                  <li class="nav-item mb-3">配送方法．送料</li>
+                  <li class="nav-item mb-3">返品。交換</li>
+                </ul>
+                <ul class=" nav col flex-column">
+                  <li class="nav-item mb-3">長くご愛用いただくために</li>
+                  <li class="nav-item mb-3">ギフトラッピングについて</li>
+                  <li class="nav-item mb-3">よくあるご質問</li>
+                  <li class="nav-item mb-3">お問い合わせ</li>
+                  <li class="nav-item mb-3">カートを見る</li>
+                  <li class="nav-item mb-3">ログイン</li>
+                  <li class="nav-item mb-3">メルマガ登録．解除</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-4">
+              <hr>
+              <h5 class="fw-bold mb-3">PLOTTER Online Shopについて</h5>
+              <ul class=" nav flex-column">
+                <li class="nav-item mb-3">PLOTTER とは</li>
+                <li class="nav-item mb-3">PLOTTER オフィシャルサイト</li>
+                <li class="nav-item mb-3">会社概要</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 m-3">
+        <p>© Designphil Inc. 2017</p>
+        <div class="media-icon d-flex">
+          <div class="facebook ms-4"><i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i></div>
+          <div class="instagram ms-4"><i class="fa-brands fa-instagram  fa-xl" style="color: #ffffff;"></i></div>
+          <div class="youtube ms-4"><i class="fa-brands fa-youtube fa-xl" style="color: #ffffff;"></i></div>
+        </div>
+
+        </ul>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="../js/cart03.js"></script>
+</body>
+
+</html>
