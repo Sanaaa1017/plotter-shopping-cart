@@ -9,14 +9,59 @@ div {
 }
 
 hr {
-    height: 1.5px;
     background-color: rgb(0, 0, 0);
+    height: 1.5px;
     opacity: 1;
 }
 
 a {
     text-decoration: none;
     color: black
+}
+/* 底線樣式 */
+.underline:hover{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* 導覽列底線樣式 */
+.nav-underline-hover {
+    position: relative;
+    display: block;
+    width: fit-content;
+}
+.nav-underline-hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    width: 0;
+    height: 1px;
+    background-color: currentColor;
+    transition: width 0.3s ease; 
+}
+.nav-underline-hover:hover::after {
+    width: 100%;
+}
+
+/* 側攔底線樣式 */
+.list-underline-hover {
+    position: relative;
+    display: block;
+    width: fit-content;
+}
+.list-underline-hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transition: width 0.3s ease; 
+}
+.list-underline-hover:hover::after {
+    width: 100%;
 }
 
 .news-contents {
