@@ -2,3 +2,5 @@
  
  [Page](https://sanaaa1017.github.io/plotter-shopping-cart/)
 
+ ![首頁](web-images/home.png)
+
