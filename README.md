@@ -1,11 +1,11 @@
 # Plotter網站首頁仿切+購物車功能
 
--使用Bootstrap框架進行切版與設計
--購物車功能:
- -商品數量增減按鈕
- -個別金額計算
- -總金額與數量計算
- -使用localstorage暫存資料
+**使用Bootstrap框架進行切版與設計**
+**購物車功能:**
+  - 商品數量增減按鈕
+  - 個別金額計算
+  - 總金額與數量計算
+  - 使用localstorage暫存資料
 
 查看網站→ [Page](https://sanaaa1017.github.io/plotter-shopping-cart/)
 
